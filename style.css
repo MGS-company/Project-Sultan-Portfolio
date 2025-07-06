@@ -1,0 +1,256 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Robota", sans-serif;
+  background-color: #222228;
+  color: white;
+}
+.continer{
+  margin: 0 auto;
+}
+p{
+  font-weight: 300;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
+} 
+nav{
+  display: flex;
+  padding: 20px 15px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0 0 10px whitesmoke;
+}
+.menyu__v{
+  display: none;
+}
+.menyu{
+  display: none;
+}
+nav h3{
+  letter-spacing: 10px;
+  font-weight: 600;
+  font-size: 35px;
+}
+.hidden{
+  display: none;
+}
+ul{
+  width: 100%;
+  transition: all 0.5s ease;
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+}
+.button{
+  transition: all 0.5s ease;
+  border-radius: 10px;
+  padding: 10px 30px;
+  border: none;
+  background: #404258;
+  color: white;
+}
+/*nav button:hover{
+  
+} */
+/* Header*/
+header{
+  display: flex;
+  padding: 100px 35px;
+  justify-content: space-around;
+  align-items: center;
+}
+header > img {
+  border-radius: 20px;
+  width: 250px;
+  height: 250px;
+  transition: all 0.5s ease ; 
+}
+.text{
+  position: relative;
+  color: #49CCFF;
+  text-shadow: 0 0 20px #46B7E3;
+} 
+.header__info {
+  flex-basis: 400px;
+  line-height: 40px;
+}
+.header__info-p {
+  font-weight: 600;
+  font-size: 17px;
+}
+.header__info-p1{
+  line-height: 25px;
+}
+.header__info h2{
+  font-size: 30px;
+}
+.header__icon a{
+  display: block;
+  width: 50px;
+} 
+/*section_project*/
+section {
+  text-align: center;
+}
+.section__info {
+  display: flex;
+  padding: 50px 30px;
+  justify-content: space-between;
+}
+.section__project1 {
+  box-shadow: 0 0 10px #BCBED0;
+  padding: 10px;
+  margin: 0 20px;
+  line-height: 20px;
+}
+.section__project1 img{
+  height: 230px;
+}
+.section__project1 h2{
+  margin: 20px 0 ;
+}
+.section__project1 img{
+  width: 250px;
+}
+
+.button:hover {
+  background: #fff;
+  color: black;
+  border: 1px solid #42445A;
+}
+.btn{
+  display: none;
+}
+.project__button {
+  padding: 10px 100px ;
+  margin: 13px 0 7px 0;
+}
+
+/*footer bolim*/
+
+footer{
+  margin-top: 50px;
+  text-align: center;
+  line-height: 30px;
+}
+
+footer h1{
+  font-size: 3.3rem;
+}
+footer ul{
+  justify-content: center;
+  margin-top: 20px ;
+}
+.footer__icon a{
+  margin-top: 20px;
+  display: inline-block;
+  width: 50px;
+}
+
+@media only screen and (max-width: 700px){
+  nav .button{
+    display: none;
+  }
+  .nav__menyu {
+    display: none;
+    text-align: center;
+    padding: 10px 0;
+  }
+  h2 span{
+    position: absolute;
+  }
+  .hidden{
+    display: block;
+  }
+  .menyu__v{
+    display: inline-block;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    padding: 20px;
+    border-radius: 20px;
+    visibility: hidden;
+  }
+  .menyu__v ul {
+    display: block;
+    visibility: hidden;
+    width: 90vw;
+    text-align: center;
+  }
+  .menyu__v ul li{
+    padding: 10px 20px ;
+  }
+  .hidden:hover .menyu__v{
+    visibility: visible;
+  }
+  .hidden:hover li{
+    visibility: visible;
+  }
+  .menyu{
+    display: block;
+    width: 40px;
+  }
+  
+  /*nav h3 {
+    margin-top: 20px;
+    font-size: 50px;
+  }
+  .nav__menyu ul{
+    background: #fff;
+    margin-top: 30px;
+    border: 2px solid #444554;
+    padding: 20px 0;
+    justify-content: space-evenly;
+  } */
+  
+  header {
+    flex-direction: column;
+    justify-content: center;
+  }
+ .header__info {
+   padding: 20px;
+ }
+  .header__info > h2 {
+    font-size: 35px;
+    line-height: 20px ;
+  }
+  .header__info-p{
+    margin: 15px 0;
+    line-height: 20px;
+  }
+ .btn{
+   display: block;
+   padding: 10px 130px;
+   border-radius: 10px ;
+   border: 1px solid  #42445A;
+   position: relative;
+   bottom: 100px;
+ }
+  .header__icon {
+    display: flex;
+    position: relative;
+    bottom: 40px;
+  }
+  .section__info{
+    flex-direction: column;
+    align-content: space-around;
+  }
+  .section__project1 {
+    margin-bottom: 25px;
+  }
+  
+  footer ul li{
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+}
